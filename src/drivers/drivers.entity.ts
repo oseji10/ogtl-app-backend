@@ -3,7 +3,7 @@ import { Entity, PrimaryGeneratedColumn, Column, OneToOne, CreateDateColumn, Upd
 
 @Entity()
 export class Drivers {
-    @PrimaryGeneratedColumn('uuid')
+    @PrimaryGeneratedColumn()
     driverId: string;
      
     @Column()

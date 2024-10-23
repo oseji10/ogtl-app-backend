@@ -5,7 +5,7 @@ import { Entity, PrimaryGeneratedColumn, Column, OneToOne, CreateDateColumn, Upd
 
 @Entity()
 export class Trips {
-    @PrimaryGeneratedColumn('uuid')
+    @PrimaryGeneratedColumn()
     tripID: string;
 
     @ManyToOne(() => Destinations, (destinations) => destinations.destinationID)

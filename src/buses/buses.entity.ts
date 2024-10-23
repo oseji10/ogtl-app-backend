@@ -3,7 +3,7 @@ import { Entity, PrimaryGeneratedColumn, Column, OneToOne, CreateDateColumn, Upd
 
 @Entity()
 export class Buses {
-    @PrimaryGeneratedColumn('uuid')
+    @PrimaryGeneratedColumn()
     busId: string;
 
     @Column()

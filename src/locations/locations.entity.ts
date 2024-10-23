@@ -3,7 +3,7 @@ import { Entity, PrimaryGeneratedColumn, Column, OneToOne, CreateDateColumn, Upd
 
 @Entity()
 export class Locations {
-    @PrimaryGeneratedColumn('uuid')
+    @PrimaryGeneratedColumn()
     locationID: string;
     
     @Column()

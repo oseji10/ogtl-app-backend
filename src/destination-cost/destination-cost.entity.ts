@@ -3,7 +3,7 @@ import { Entity, PrimaryGeneratedColumn, Column, ManyToOne, CreateDateColumn, Up
 
 @Entity()
 export class DestinationCost {
-    @PrimaryGeneratedColumn('uuid')
+    @PrimaryGeneratedColumn()
     costId: string;
 
     @Column({ nullable: true })

@@ -14,7 +14,7 @@ import { DestinationCost } from 'src/destination-cost/destination-cost.entity';
 
 @Entity()
 export class Destinations {
-    @PrimaryGeneratedColumn('uuid')
+    @PrimaryGeneratedColumn()
     destinationID: string;
 
     // Many destinations can have the same starting location

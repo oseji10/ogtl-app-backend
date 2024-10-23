@@ -5,7 +5,7 @@ import { Entity, PrimaryGeneratedColumn, Column, OneToOne, CreateDateColumn, Upd
 
 @Entity()
 export class Passengers {
-    @PrimaryGeneratedColumn('uuid')
+    @PrimaryGeneratedColumn()
     passengerID: string;
 
     @OneToMany(() => Destinations, (destinations) => destinations.destinationID)
