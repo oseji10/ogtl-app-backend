@@ -6,7 +6,8 @@ async function bootstrap() {
 
   // Enable CORS
   app.enableCors({
-    origin: 'http://localhost:3000', // Update with your frontend domain if it's different
+    origin: ['booking.ogtl.ng', 'transport.ogtl.ng'],
+    // origin: 'http://localhost:3000', // Update with your frontend domain if it's different
     credentials: true, // Allow credentials (cookies) to be sent
   });
   
